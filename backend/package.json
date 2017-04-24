@@ -1,0 +1,28 @@
+{
+  "name": "mytasklist",
+  "version": "1.0.0",
+  "description": "Simple task manager",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.16.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.0",
+    "express-validator": "^3.1.2",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^7.3.0",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.8.1",
+    "nodemailer": "^3.1.3"
+  }
+}

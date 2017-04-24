@@ -1,0 +1,65 @@
+.st0 {
+					fill: none;
+					stroke: #FFFFFF;
+					stroke-miterlimit: 10;
+				}
+				
+				.st1 {
+					fill: url(#XMLID_3_);
+				}
+				
+				.active .drawk {
+					stroke-dasharray: 1000;
+					stroke-dashoffset: 0;
+					-webkit-animation: daskh 1.5s ease-in forwards;
+					-o-animation: daskh 1.5s ease-in forwards;
+					-moz-animation: daskh 1.5s ease-in forwards;
+					animation: daskh 1.5s ease-in forwards;
+				}
+				
+				@-webkit-keyframes daskh {
+					0% {
+						stroke-dashoffset: 1000;
+					}
+					100% {
+						stroke-dashoffset: 0
+					}
+				}
+				
+				.active .f-left {
+					transform: translateX(0px) translateY(0px);
+					opacity: 1;
+					-webkit-animation: fleft 0.4s ease-in forwards;
+					-o-animation: fleft 0.4s ease-in forwards;
+					-moz-animation: fleft 0.4s ease-in forwards;
+					animation: fleft 0.4s ease-in forwards;
+				}
+				
+				@-webkit-keyframes fleft {
+					0% {
+						transform: translateX(-10px) translateY(-10px);
+						opacity: 0;
+					}
+					100% {
+						transform: translateX(0px) translateY(0px);
+						opacity: 1;
+					}
+				}
+				
+				.active .f-right-r {
+					transform-origin: center center;
+					transform: translateX(0px);
+					-webkit-animation: frightr 0.4s ease-in forwards;
+					-o-animation: frightr 0.4s ease-in forwards;
+					-moz-animation: frightr 0.4s ease-in forwards;
+					animation: frightr 0.4s ease-in forwards;
+				}
+				
+				@-webkit-keyframes frightr {
+					0% {
+						transform: translateX(5px);
+					}
+					100% {
+						transform: translateX(0px);
+					}
+				}

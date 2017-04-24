@@ -1,0 +1,14 @@
+<div class="login-screen">
+	<logo></logo>
+
+	<form id="forgotPasswordForm" [formGroup]="forgotPasswordForm" novalidate (ngSubmit)="doForgot(forgotPasswordForm.value, forgotPasswordForm.valid)">
+		<div class="text-input">
+			<input formControlName="email" type="email" [ngClass]="{'validation-error': checkValid(forgotPasswordForm.controls.email)}">
+			<label>Email</label>
+		</div>
+
+		<input class="btn" type="submit" value="Submit">
+	</form>
+</div>
+
+<a [routerLink]="['/registration']" class="register-link">Don't have an account? <strong>Sign up</strong></a>

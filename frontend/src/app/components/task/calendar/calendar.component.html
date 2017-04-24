@@ -1,0 +1,6 @@
+<h1 class="month">{{this.monthName}}</h1>
+<div class="calendar-wrap">
+    <ul id="calendar">
+        <li (click)="clickCalendar($event, item+1)" *ngFor="let item of this.numberOfDays">{{item+1}}</li>
+    </ul>
+</div>

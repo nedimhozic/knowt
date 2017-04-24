@@ -1,0 +1,88 @@
+<div id="taskForm">
+    <div class="template-box">
+        <div class="template-header">
+            <span>Templates</span>
+        </div>
+
+        <div class="template-body">
+
+            <div class="template">
+                <img src="" alt="" />
+                <div>
+                    <span class="title">Title</span>
+                    <span class="desc">Description part</span>
+                </div>
+            </div>
+
+            <div class="template">
+                <img src="" alt="" />
+                <div>
+                    <span class="title">Title</span>
+                    <span class="desc">Description part</span>
+                </div>
+            </div>
+
+            <div class="template">
+                <img src="" alt="" />
+                <div>
+                    <span class="title">Title</span>
+                    <span class="desc">Description part</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="editor-box">
+        <div class="editor-header">
+            <span>Toolbox</span>
+        </div>
+
+        <div class="editor-body">
+            <div class="editor-controls">
+                <div class="editor-control" (click)="addSingleTextField()">
+                    <span class="control-add">+</span>
+                    <span>Single line text field</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Clickable URL link</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Document Link</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Dropdown Selection</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Additional Item</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Mutli ine text field</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Click-copy URL link</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Image Link</span>
+                </div>
+                <div class="editor-control">
+                    <span class="control-add">+</span>
+                    <span>Checkbox</span>
+                </div>
+            </div>
+
+            <div class="editor-form">
+                <dynamic-component [componentData]="componentData"></dynamic-component>
+                <!--<dynamic-component [dragula]='"bag"' [componentData]="componentData" class='container dnd-container first' [dragula]='"bag"'></dynamic-component>
+                <dynamic-component [dragula]='"bag"' [componentData]="componentData" class='container dnd-container first' [dragula]='"bag"'></dynamic-component>
+                <dynamic-component [dragula]='"bag"' [componentData]="componentData" class='container dnd-container first' [dragula]='"bag"'></dynamic-component>-->
+            </div>
+        </div>
+    </div>
+</div>

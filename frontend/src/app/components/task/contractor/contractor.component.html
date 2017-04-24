@@ -1,0 +1,10 @@
+<form id="contractorForm" [formGroup]="contractorForm" novalidate (ngSubmit)="createContractor(contractorForm.value, contractorForm.valid)">
+	<img id="contractor_image" (click)="selectImage()" [src]="contractorImgSrc">
+	<input type="file" id="upload_contractor_image" imageUpload (imageSelected)="onChangeImage($event)" [resizeOptions]="resizeOptions"/>
+	<div class="text-input">
+		<input type="text" formControlName="name" [ngClass]="{'validation-error': checkValid(contractorForm.controls.name)}">
+		<label>Contractor Name</label>
+	</div>
+
+	<input class="btn" type="submit" value="Create">
+</form>

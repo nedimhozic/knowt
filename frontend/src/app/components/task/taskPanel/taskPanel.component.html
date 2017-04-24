@@ -1,0 +1,99 @@
+<div class="overlay"></div>
+<div class="side-panel">
+	<div class="menu">
+		<div class="pulse"></div>
+		<div class="dot"></div>
+	</div>
+
+	<div class="overlay-close menu">
+		<div class="close">X</div>
+	</div>
+</div>
+<div class="wrap">
+	<calendar></calendar>
+	<div id="taskboard">
+		<ul class="morning">
+			<li *ngFor="let item of this.morning">
+				<span class="task-box">
+								<img class="contractor-image" src="src/images/contractor.png">
+								<span class="task-content">
+									<span class="task-title">{{item.title}}</span>
+				<span class="task-text">{{item.description}}</span>
+				<span class="task-time">{{ item.date | date:'HH:mm' }}</span>
+				</span>
+				<span class="task-documents">
+									<span>12</span>
+				<img src="src/images/attach.png">
+				<span>Attachments</span>
+
+				<a href="#">See Details</a>
+				</span>
+				</span>
+
+				<span class="task-actions">
+								<span class="approve"></span>
+				<span class="cancel"></span>
+				</span>
+			</li>
+		</ul>
+
+		<ul class="afternoon">
+			<li *ngFor="let item of this.afternoon">
+				<span class="task-box">
+								<img class="contractor-image" src="src/images/contractor.png">
+								<span class="task-content">
+									<span class="task-title">{{item.title}}</span>
+				<span class="task-text">{{item.description}}</span>
+				<span class="task-time">{{ item.date | date:'HH:mm' }}</span>
+				</span>
+				<span class="task-documents">
+									<span>12</span>
+				<img src="src/images/attach.png">
+				<span>Attachments</span>
+
+				<a href="#">See Details</a>
+				</span>
+				</span>
+
+				<span class="task-actions">
+								<span class="approve"></span>
+				<span class="cancel"></span>
+				</span>
+			</li>
+		</ul>
+
+		<ul class="evening">
+			<li *ngFor="let item of this.evening">
+				<span class="task-box">
+								<img class="contractor-image" src="src/images/contractor.png">
+								<span class="task-content">
+									<span class="task-title">{{item.title}}</span>
+				<span class="task-text">{{item.description}}</span>
+				<span class="task-time">{{ item.date | date:'HH:mm' }}</span>
+				</span>
+				<span class="task-documents">
+									<span>12</span>
+				<img src="src/images/attach.png">
+				<span>Attachments</span>
+
+				<a href="#">See Details</a>
+				</span>
+				</span>
+
+				<span class="task-actions">
+								<span class="approve"></span>
+				<span class="cancel"></span>
+				</span>
+			</li>
+		</ul>
+	</div>
+
+	<div id="actions">
+		<button type="button">+</button>
+		<div class="actions">
+			<button class="create-new-task-action" type="button" [routerLink]="['/', {outlets: {'task-router': 'create-task'}}]">New Task</button>
+			<button class="create-new-template-action" type="button">New Template</button>
+			<button class="create-new-contractor-action" type="button" [routerLink]="['/', {outlets: {'task-router': 'contractor'}}]">New Contractor</button>
+		</div>
+	</div>
+</div>

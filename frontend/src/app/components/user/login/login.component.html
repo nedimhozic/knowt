@@ -1,0 +1,20 @@
+<div class="login-screen">
+	<logo></logo>
+
+	<form id="login" [formGroup]="loginForm" novalidate (ngSubmit)="doLogin(loginForm.value, loginForm.valid)">
+		<div class="text-input">
+			<input formControlName="email" type="email" [ngClass]="{'validation-error': checkValid(loginForm.controls.email)}">
+			<label>Email</label>
+		</div>
+
+		<div class="text-input">
+			<input formControlName="password" type="password" [ngClass]="{'validation-error': checkValid(loginForm.controls.password)}">
+			<label>Password</label>
+		</div>
+
+		<input class="btn" type="submit" value="Login">
+	</form>
+</div>
+
+<a [routerLink]="['/registration']" class="register-link">Don't have an account? <strong>Sign up</strong></a>
+<a [routerLink]="['/forgot']" class="forgot-link"><strong>Forgot Password?</strong></a>
